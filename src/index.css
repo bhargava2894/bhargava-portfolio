@@ -1,0 +1,15 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+#root { min-height: 100vh; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1e2837; }
+::-webkit-scrollbar-thumb { background: #4fc3f7; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #29b6f6; }
