@@ -1,41 +1,54 @@
-import React, { Suspense } from 'react'
-import { motion } from 'framer-motion'
-import Navbar from './components/Navbar'
-import Hero3D from './components/Hero3D'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import LoadingSpinner from './components/LoadingSpinner'
-import './styles/globals.css'
-import './styles/components.css'
+import React, { useCallback, useEffect, useState } from 'react'
+import { AnimatePresence, MotionConfig } from 'framer-motion'
+import Preloader from './fx/Preloader'
+import Cursor from './fx/Cursor'
+import Nav from './sections/Nav'
+import Hero from './sections/Hero'
+import About from './sections/About'
+import Bands from './sections/Bands'
+import Work from './sections/Work'
+import Impact from './sections/Impact'
+import Experience from './sections/Experience'
+import Stack from './sections/Stack'
+import Credentials from './sections/Credentials'
+import Contact from './sections/Contact'
+import './styles/site.css'
 
 function App() {
+  const [loading, setLoading] = useState(true)
+  const finishLoading = useCallback(() => setLoading(false), [])
+
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) window.history.scrollRestoration = 'manual'
+    window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('is-loading', loading)
+  }, [loading])
+
   return (
-    <div className="App">
-      <Navbar />
-      
-      <Suspense fallback={<LoadingSpinner />}>
-        <Hero3D />
-      </Suspense>
-      
-      <motion.main
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </motion.main>
-      
-      <footer className="footer">
-        <div className="container">
-          <p>&copy; 2025 Bhargava Sista. Built with React, Three.js & passion.</p>
+    <MotionConfig reducedMotion="user">
+      <AnimatePresence>{loading && <Preloader key="preloader" onDone={finishLoading} />}</AnimatePresence>
+      <Cursor />
+      <div className="grain" aria-hidden="true" />
+      <Nav ready={!loading} />
+
+      <main>
+        <Hero ready={!loading} />
+        <div className="page">
+          <About />
+          <Bands />
+          <Work />
+          <Impact />
+          <Experience />
+          <Stack />
+          <Credentials />
         </div>
-      </footer>
-    </div>
+      </main>
+
+      <Contact />
+    </MotionConfig>
   )
 }
 
