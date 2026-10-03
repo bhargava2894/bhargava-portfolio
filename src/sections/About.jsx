@@ -27,7 +27,7 @@ export default function About() {
                     <path id="badge-circle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" />
                   </defs>
                   <text>
-                    <textPath href="#badge-circle" textLength="286" lengthAdjust="spacing">JAVA · DISTRIBUTED SYSTEMS · CLOUD · GENAI · </textPath>
+                    <textPath href="#badge-circle" textLength="286" lengthAdjust="spacing">FULL STACK · JAVA · DISTRIBUTED · CLOUD · GENAI · </textPath>
                   </text>
                 </svg>
               </span>

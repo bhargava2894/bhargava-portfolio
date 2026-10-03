@@ -67,12 +67,17 @@ export default function Hero({ ready }) {
             <motion.p {...fadeUp(0.5)} animate={show}>
               <span className="hero-meta-label">Role</span>
               {profile.role}
+              <span className="hero-meta-sub">{profile.discipline}</span>
             </motion.p>
             <motion.p {...fadeUp(0.6)} animate={show}>
               <span className="hero-meta-label">Currently</span>
               {profile.company}, Hyderabad
             </motion.p>
-            <motion.p {...fadeUp(0.7)} animate={show} className="hero-meta-exp">
+            <motion.p {...fadeUp(0.7)} animate={show}>
+              <span className="hero-meta-label">Education</span>
+              {profile.education}
+            </motion.p>
+            <motion.p {...fadeUp(0.8)} animate={show} className="hero-meta-exp">
               <span className="hero-meta-label">Experience</span>
               8+ years
             </motion.p>
@@ -105,8 +110,8 @@ export default function Hero({ ready }) {
 
           <div className="hero-bottom">
             <motion.p className="hero-lede" {...fadeUp(1.1)} animate={show}>
-              I build secure, high-throughput Java systems for regulated enterprises, from terabyte-scale file
-              transfer to AI platforms I run in production.
+              Full-stack engineer with dual master's degrees from the USA. I build secure, high-throughput Java
+              systems for regulated enterprises, from terabyte-scale file transfer to AI platforms I run in production.
             </motion.p>
 
             <motion.div className="hero-actions" {...fadeUp(1.25)} animate={show}>

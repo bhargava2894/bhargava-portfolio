@@ -569,7 +569,7 @@ a:focus-visible .roll-inner {
 
 .hero-meta {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   justify-content: space-between;
   gap: 16px;
   font-size: 0.95rem;
@@ -585,6 +585,12 @@ a:focus-visible .roll-inner {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   opacity: 0.65;
+}
+
+.hero-meta-sub {
+  display: block;
+  margin-top: 2px;
+  color: var(--orange);
 }
 
 .hero-meta-exp {
@@ -1734,6 +1740,22 @@ a:focus-visible .roll-inner {
   letter-spacing: -0.025em;
 }
 
+.edu-tag {
+  display: inline-block;
+  margin-left: 14px;
+  padding: 4px 10px;
+  border: 1px solid var(--orange);
+  border-radius: 999px;
+  color: var(--orange);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 .edu-row p {
   margin-top: 8px;
   color: var(--muted);
@@ -2316,7 +2338,7 @@ button.contact-orb {
   }
 
   .hero-meta-exp {
-    display: none;
+    text-align: left;
   }
 
   .hero-line-2 {

@@ -3,7 +3,9 @@ export const profile = {
   first: 'Bhargava',
   last: 'Sista',
   role: 'Senior Software Engineer',
-  focus: ['Java', 'Distributed Systems', 'Cloud', 'GenAI'],
+  discipline: 'Full Stack',
+  education: "Dual Master's, USA",
+  focus: ['Full Stack', 'Java', 'Distributed Systems', 'Cloud', 'GenAI'],
   company: 'Softility',
   location: 'Hyderabad, India',
   email: 'bhargava.sista94@gmail.com',
@@ -15,13 +17,13 @@ export const profile = {
 
 // Words wrapped in *asterisks* are highlighted in the scroll-lit manifesto.
 export const manifesto =
-  'Eight years building secure, high-throughput Java systems for regulated enterprises. I make *terabyte* transfers fit inside a *2* *GiB* container, turn silent data corruption into failures you can actually catch, and ship *AI* products end to end — from architecture to production.'
+  'Eight years as a *full-stack* engineer building secure, high-throughput Java systems for regulated enterprises, backed by *two* *master\'s* degrees from US universities. I make *terabyte* transfers fit inside a *2* *GiB* container, turn silent data corruption into failures you can actually catch, and ship *AI* products end to end — from architecture to production.'
 
 export const stats = [
   { value: 8, suffix: '+', label: 'Years building production Java systems' },
   { value: 5, suffix: ' TB', label: 'Largest single-file transfer, up from ~976 GB' },
   { value: 857, label: 'Automated tests on a platform I built solo' },
-  { value: 760, suffix: '+', label: 'Commits shipped in three months' }
+  { value: 2, label: "Master's degrees from US universities" }
 ]
 
 export const projects = [
@@ -310,12 +312,14 @@ export const education = [
     degree: "Executive Master's, Information Systems Security",
     school: 'University of the Cumberlands',
     place: 'Kentucky, USA',
+    tag: "Master's · USA",
     years: '2018 — 2019'
   },
   {
     degree: 'M.S., Computer Science',
     school: 'Northwestern Polytechnic University',
     place: 'Fremont, CA, USA',
+    tag: "Master's · USA",
     years: '2015 — 2017'
   },
   {
@@ -333,6 +337,6 @@ export const certifications = [
 ]
 
 export const marqueeRows = [
-  ['Java 21', 'Spring Boot', 'WebFlux', 'Kubernetes', 'AWS', 'GCP', 'Kafka', 'PostgreSQL', 'React'],
-  ['Distributed Systems', 'Cloud', 'GenAI', 'RAG', 'Security', 'Performance']
+  ['Full Stack', 'Java 21', 'Spring Boot', 'WebFlux', 'Kubernetes', 'AWS', 'GCP', 'Kafka', 'PostgreSQL', 'React'],
+  ['Full Stack', 'Distributed Systems', 'Cloud', 'GenAI', 'RAG', 'Security', "Dual Master's · USA"]
 ]

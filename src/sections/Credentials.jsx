@@ -8,7 +8,7 @@ export default function Credentials() {
   return (
     <section id="education" className="section credentials">
       <div className="container">
-        <SectionHeading index="06" kicker="Education" title="Grounded in security and computer science." />
+        <SectionHeading index="06" kicker="Education" title="Dual master's from the USA, grounded in security and computer science." />
 
         <ol className="edu-list">
           {education.map((item, i) => (
@@ -22,7 +22,10 @@ export default function Credentials() {
             >
               <span className="edu-years">{item.years}</span>
               <div>
-                <h3>{item.degree}</h3>
+                <h3>
+                  {item.degree}
+                  {item.tag && <span className="edu-tag">{item.tag}</span>}
+                </h3>
                 <p>
                   {item.school} · {item.place}
                 </p>
