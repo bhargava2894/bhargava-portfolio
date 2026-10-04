@@ -215,7 +215,7 @@ export const experience = [
     stack: ['Java 21', 'Spring Boot 4', 'WebFlux', 'AWS', 'GCP', 'React', 'Gemini']
   },
   {
-    role: 'Software Engineer',
+    role: 'Software Engineer II',
     company: 'EPSoft Product Pvt. Ltd.',
     location: 'Hyderabad, India',
     period: 'Jan 2023 — Sep 2023',
