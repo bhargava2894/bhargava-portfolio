@@ -245,7 +245,7 @@ export const experience = [
     stack: ['Spring Boot', 'Kafka', 'Kubernetes', 'Jenkins', 'Angular']
   },
   {
-    role: 'Programmer Analyst (Intern)',
+    role: 'Software Engineer',
     company: 'Avan IT LLC · Ameriprise Financial',
     location: 'Minneapolis, MN, USA',
     period: 'Mar 2019 — Sep 2019',
